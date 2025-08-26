@@ -16,6 +16,7 @@ import {
   Skeleton,
   ActionIcon,
   Tooltip,
+  Divider,
 } from "@mantine/core";
 import { IconPlus, IconEye, IconEdit, IconTrash } from "@tabler/icons-react";
 import { useRouter } from "@/i18n/navigation";
@@ -198,7 +199,10 @@ export default function IdCardsTemplates() {
                       templateData={template.template as any}
                     />
                   </div>
-
+                  <Divider />
+                  <Badge variant="light" color="green" size="xl" radius="sm">
+                    15,000 IQD
+                  </Badge>
                   <Group gap="xs" mt="auto">
                     <Button
                       variant="light"
