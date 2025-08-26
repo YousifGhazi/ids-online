@@ -57,6 +57,13 @@ export function IdsTable() {
             sortable: true,
           },
           {
+            accessor: "price",
+            title: t("price"),
+            render: () => {
+              return "15,000 IQD";
+            },
+          },
+          {
             accessor: "template.title",
             title: t("templates.singular_title"),
             sortable: true,
